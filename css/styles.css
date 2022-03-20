@@ -1,0 +1,346 @@
+/********************************
+
+Copyright (c) 2020 Lyndon Daniels
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*********************************/
+/*
+body {
+  position: relative;
+}
+*/
+/*** Nav Styling ***/
+
+#shoppingCartMenu{
+    max-width: 22px;
+}
+
+#logoNav{
+        display: none;
+    }
+
+nav ul{
+    margin-top: 8px;
+}
+
+nav ul .alert{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: -6px;
+}
+
+nav ul button{
+    margin-top: -7px;
+}
+ul li .nav-link{
+    padding: 0px;
+}
+
+.navbar-brand{
+    margin-left: 14px;
+}
+
+#navTotalCost{
+        display: inline-flex;
+    }
+
+/********ABOUT***********/
+
+#aboutBkg{
+    background-image: url("../images/about_large_2048x1366.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 6px;
+}
+
+#aboutBkgGrad{
+    background: rgb(248,249,250);
+    background: linear-gradient(90deg, rgba(248,249,250,1) 0%, rgba(248,249,250,0.7) 70%, rgba(248,249,250,0) 100%);
+    width: 100%;
+    height: 100%;
+    
+}
+
+#aboutContent{
+    width: 50%;
+    float:left;
+    margin-left: 5%;
+}
+/********Products********/
+
+#mainShop{
+    background: url(../images/productsTitle.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    border-radius: 6px;
+    padding-top: 24px;
+}
+
+#mainShopHeader{
+    padding-bottom: 12px;
+}
+/*
+#mainShopContainer{
+    background: rgb(248,249,250);
+    background: linear-gradient(0deg, rgba(248,249,250,1) 0%, rgba(248,249,250,0.5) 10%, rgba(248,249,250,0) 100%);
+    width: 100%;
+    margin: 0;
+}
+*/
+/*
+.prod-btn-hover:hover:after{
+    content: "👁";
+}
+*/
+
+.products{
+    min-width: 240px;
+    max-width: 250px;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(12px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+}
+.isVisible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/********MODALS**********/
+
+/*****Modal Login*******/
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin span{
+    margin-bottom: 0; 
+}
+
+/****Modal Edit Cart****/
+.modal-open {
+    overflow-y:scroll;
+}
+
+.modal-content{
+    margin-top: 80px;
+}
+
+#closeButton{
+    background-color: white;
+    margin-top: 70px;
+    width: 100%;
+}
+
+#deleteItemID{
+    display: inline-block;
+}
+#deleteItem button{
+    display: inline-block;
+}
+
+.editCartDelItem{
+    display: none;
+    list-style-type: none;
+}
+
+span.cartItems{
+    color: darkorange;
+}
+
+/*******Modal Orders****/
+.orders_li{
+    float:left;
+    list-style: none;
+    font-size: 14px;
+    margin: auto;
+}
+
+/*******Tooltips*******/
+
+
+/******FOOTER*********/
+.socialIcons{
+    width: 16px;
+    margin-right: 5px;
+}
+
+/***Scroll to top button**/
+
+.up-btn {
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  opacity: .7;
+  background: #333;
+  cursor: pointer;
+  position: fixed;
+  z-index: 2000;
+  transition: all .4s ease-in-out;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  border-radius: 6px;
+}
+
+.up-btn.up-btn__hide {
+  opacity: 0;
+  transform: scale(0);
+  transition: all .4s ease-in-out;
+}
+
+.up-btn:hover {
+  opacity: 1;
+}
+
+.up-btn.up-btn_circle {
+  border-radius: 50%;
+}
+
+.up-btn__img {
+  max-width: 100%;
+}
+
+
+/****Media Queries****/
+@media(max-width: 1010px){
+    #aboutBkgGrad{
+        background: linear-gradient(90deg, rgba(248,249,250,1) 0%, rgba(248,249,250,0.9) 85%, rgba(248,249,250,0) 100%);
+    }
+    #aboutContent{
+        width: 70%;
+        margin-left: 0%;
+        }
+}
+
+@media(max-width: 835px){
+    #shoppingCartMenu{
+        display: none;
+    }
+    nav .navbar-brand{
+        width: 20%;
+    }
+    .navbar-brand{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 1.1em;
+    }
+}
+
+@media(max-width: 790px){
+    nav ul .alert{
+        margin-top: 10px;
+        }
+    nav ul button{
+        margin-top: 10px;
+        }
+    #aboutBkg{
+    background-image: url("../images/about_medium_750x556.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 556px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 6px;
+    }
+    #aboutContent{
+        width: 100%;
+    }
+    
+    .navbar-brand{
+        display: none;
+        margin-left: 0px;
+    }
+    #logoNav{
+        display: inline-block;
+        max-width: 48px;
+    }
+}
+
+@media(max-width: 428px){
+    #aboutBkg{
+    background-image: url("../images/about_medium_428x900.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 900px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 6px;
+    }
+    
+    .navbar-brand{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 350px){
+    #shoppingCartMenu{
+        display: none;
+    }
+    .navbar-toggler{
+        width: 10%;
+        padding: 0;
+    }
+    .navbar-toggler-icon{
+        width: 15px;
+    }
+    
+    #aboutBkg{
+    background-image: url("../images/about_small_350x1096.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1096px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 6px;
+    }
+}
+
+@media (max-width: 300px){
+    .navbar-brand{
+        width : 60%;
+        font-size: .9em;
+    }
+}
